@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SigninComponent implements OnInit {
 
+  private email: String;
+  private password: String;
+
   constructor() { }
 
   ngOnInit() {
+    this.email = '';
+    this.password = '';
   }
+
+  onClickSubmit() {
+    console.log('You Click Submit');
+  }
+
 
 }

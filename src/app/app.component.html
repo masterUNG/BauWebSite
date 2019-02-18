@@ -1,8 +1,36 @@
-<nav>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <!-- app Component -->
+      <div class="row">
 
-  <button style="margin-right: 50px" routerLink=''>Sign In</button>
-  <button routerLink='signup'>Sign Up</button>
+        <!-- Logo -->
+        <div class="col-lg-4">
+          <img src="assets/images/logo.png" class="rounded float-left" alt="" width="70px">
+        </div>
 
-</nav>
+        <!-- Menu Bar -->
+        <div class="col-lg-8">
 
-<router-outlet></router-outlet>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="#" routerLink=''>Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" routerLink='signup'>Sign Up</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+      <!-- Orther Component -->
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+
+
+
+
