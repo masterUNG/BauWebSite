@@ -1,21 +1,34 @@
-<div class="row">
-  <div class="col-lg-12">
-    <div class="row">
-      <div class="col-lg-4"></div>
-      <div class="col-lg-4">
-          <form>
-              <div class="form-group">
-                <label >Email address</label>
-                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email"> 
-              </div>
-              <div class="form-group">
-                <label >Password</label>
-                <input type="password" class="form-control"  placeholder="Password">
-              </div>
-              <button type="submit" class="btn btn-primary" (click)="onClickSubmit()">Submit</button>
-            </form>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+
+      <div class="row">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+
+          <form #feedBackForm="ngForm" (submit)="onClickSubmit(feedBackForm)">
+            <div class="form-group">
+              <label for="emailString">Email address</label>
+              <input type="email" ngModel class="form-control" aria-describedby="emailHelp" placeholder="Enter email"
+                name="emailString">
+
+            </div>
+            <div class="form-group">
+              <label for="passwordString">Password</label>
+              <input type="password" ngModel class="form-control" placeholder="Password" name="passwordString">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+
+        </div>
+        <div class="col-lg-4"></div>
+
+
       </div>
-      <div class="col-lg-4"></div>
+
+
     </div>
   </div>
 </div>
